@@ -1,0 +1,54 @@
+.lectures {
+    width: 100%;
+}
+
+.lectures h1 {
+    text-align: center;
+    padding-bottom: 20px;
+    color: rgb(27, 48, 62);
+}
+
+.lectures ul {
+    list-style-type: none;
+}
+
+.lectures li {
+    background-color: #eee;
+    border-left: 5px solid rgb(27, 48, 62);
+    padding: 20px;
+    cursor: pointer;
+    transition: background-color ease 0.3s;
+}
+
+.lectures li:nth-child(odd) {
+    background: #ddd;
+}
+
+.lectures li:hover {
+    background-color: rgb(27, 48, 62);
+}
+
+.lectures li:hover a {
+    color: white;
+}
+
+.lectures li:active {
+    background-color: rgb(45, 88, 117);
+}
+
+.lectures li:active a {
+    color: white;
+}
+
+.lectures li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(27, 48, 62);
+}
+
+@media screen and (max-width: 400px) {
+    .lectures h1 {
+        text-align: left;
+        padding-left: 20px;
+    }
+}
