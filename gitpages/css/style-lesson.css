@@ -1,0 +1,74 @@
+.lesson {
+    display: inline-block;
+    width: 400px;
+    margin-bottom: 20px;
+    background-color: #eee;
+    box-shadow: 0px 0px 10px #eee;
+}
+
+.lesson-pic {
+    display: inline-block;
+    width: 400px;
+    height: 400px;
+    border-radius: 100%;
+    overflow: hidden;
+    transition: border-radius ease 0.5s;
+}
+
+.lesson:hover .lesson-pic {
+    border-radius: 0;
+}
+
+.lesson-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 1.5em;
+    color: rgb(27, 48, 62);
+}
+
+.lesson-goto::after {
+    content:"";
+    display: block;
+    clear: both;
+}
+
+.lesson-goto-lectures,
+.lesson-goto-labs {
+    float: left;
+    width: 50%;
+    height: 50px;
+    background-color: rgb(27, 48, 62);
+    text-align: center;
+    font-size: 1.2em;
+    line-height: 50px;
+    cursor: pointer;
+    transition: background-color linear 0.2s;
+}
+
+.lesson-goto-lectures a,
+.lesson-goto-labs a {
+    color: white;
+    text-decoration: none;
+}
+
+.lesson-goto-lectures:hover,
+.lesson-goto-labs:hover {
+    background-color: rgb(45, 88, 117);
+}
+
+.lesson-goto-lectures:active,
+.lesson-goto-labs:active {
+    background-color: #eee;
+}
+
+.lesson-goto-lectures:active a,
+.lesson-goto-labs:active a {
+    color: rgb(27, 48, 62);
+}
+
+@media screen and (max-width: 400px) {
+    .lesson {
+        margin: 0;
+    }
+}

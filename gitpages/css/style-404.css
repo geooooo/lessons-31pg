@@ -1,0 +1,14 @@
+.msg-desc figcaption {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1.2em;
+    color: rgb(27, 48, 62);
+}
+
+.msg-status {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(27, 48, 62);
+}
